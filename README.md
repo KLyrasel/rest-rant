@@ -17,6 +17,15 @@ Rest-Rant is an app where users can review restauraunts.
 |  DELETE | /places/:id/rant/:rantid  |  Delete a rant about a particular place |
 | GET  | *  |  404 page (matches any route not defined above) |
 
+**Places**
+|  OBJECT | TYPE  |
+|---|---|
+| name  | string  |
+|  city | string  |
+|  state | string  |
+|  cuisines |  string |
+|  pic | string  |
+
 **User Stories**
 * *In progress* *
 
