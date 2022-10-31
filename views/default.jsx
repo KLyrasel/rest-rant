@@ -1,5 +1,4 @@
 const React = require('react')
-const app = express()
 
 function Def (html) {
     return (
