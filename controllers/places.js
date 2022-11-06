@@ -18,24 +18,10 @@ router.post('/', (req, res) => {
     req.body.state = 'USA'
   }
   places.push(req.body)
-  res.redirect('POST /places')
+  res.redirect('/places')
 })
 
 router.get('/', (req, res) => {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: '/images/plant-places.jpg'
-      }, {
-        name: 'Coding Cat Cafe',
-        city: 'Phoenix',
-        state: 'AZ',
-        cuisines: 'Coffee, Bakery',
-        pic: '/images/coffee.jpg'
-      }]
-
       res.render('places/index', {places})
     })
 
